@@ -15,7 +15,7 @@ driver.findElement(By.xpath("html/body/div/div/div/div/form/input[@type='text']"
 Thread.sleep(2000);
 driver.findElement(By.xpath("html/body/div/div/div/div/form/input[@id='password']")).sendKeys("secret_sauce");
 Thread.sleep(2000);
-driver.findElement(By.xpath("html/body/div/div/div/div/form/input[@value='LOGIN']")).click();
+driver.findElement(By.xpath("html/body/div/div/div/div/form/input[@value='LOGIN']")).submit();
 
 driver.close();
 	}
