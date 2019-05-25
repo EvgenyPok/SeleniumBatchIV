@@ -35,7 +35,7 @@ Quit browser
 NOTE: Selenium execution could be too fast, please use Thread.sleep
 		 */
 		
-		setUpDriver("chrome",Url );
+		setUpDriver("firefox",Url );
 		driver.findElement(By.xpath("//a[text()='Multiple Windows']")).click();
 		String parentId = driver.getWindowHandle();
 		driver.findElement(By.xpath("//a[text()='Elemental Selenium']")).click();

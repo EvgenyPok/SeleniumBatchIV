@@ -16,7 +16,7 @@ public class JSAlertHandling {
 		driver.get("http://uitestpractice.com/");
 		//click on Switch link & alert button
 		driver.findElement(By.linkText("Switch to")).click();
-		driver.findElement(By.id("alert")).click();
+		//driver.findElement(By.id("alert")).click();
 		Thread.sleep(2000);
 		//if we do not handle alert we will get UnhandledAlertException
 		//--> unexpected alert open
