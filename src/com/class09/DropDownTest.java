@@ -1,4 +1,4 @@
-package com.class9;
+package com.class09;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -9,9 +9,10 @@ public class DropDownTest extends CommonMethods{
 
 	public static void main(String[] args) throws InterruptedException {
 		
+		String browser="chrome";
 		String url="https://www.toolsqa.com/automation-practice-form/";
 		
-		setUpDriver("chrome", url);
+		setUpDriver(browser, url);
 		WebElement contriesDD = driver.findElement(By.cssSelector("select#continents"));
 		
 		selectValueFromDD(contriesDD, "Australia");
